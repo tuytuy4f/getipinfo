@@ -34,7 +34,7 @@ $ip = getIpAddress();
 echo "<p><b>";
 echo $ip . "</p></b>";
 echo "<p><b>";
-echo $getInfo->geoplugin_city . ", " . $getInfo->geoplugin_countryName . "</p></b><br>";
+echo $getInfo->geoplugin_countryName . "</p></b>";
 
 //call api
 $url = file_get_contents("http://www.geoplugin.net/json.gp?ip=" . $ip); 
