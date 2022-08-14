@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html>
+    <body>
 <?php
 function getIpAddress()
 {
@@ -32,9 +35,9 @@ function getIpAddress()
 $ip = getIpAddress();
 
 echo "<p><b>";
-echo $ip . "</p></b>";
-echo "<p><b>";
-echo $getInfo->geoplugin_countryName . "</p></b>";
+echo $ip . "</p></b><br>";
+echo "<b><p>";
+echo $getInfo->geoplugin_countryName . "</b></p>";
 
 //call api
 $url = file_get_contents("http://www.geoplugin.net/json.gp?ip=" . $ip); 
@@ -67,3 +70,5 @@ echo "</td></tr><tr><td>TIMEZONE:</td><td>";
 echo $getInfo->geoplugin_timezone;
 echo "</td></tr><tr></table>";     
 ?>
+    </body>
+</html>
