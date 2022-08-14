@@ -40,8 +40,8 @@ $url = file_get_contents("http://www.geoplugin.net/json.gp?ip=" . $ip);
 $getInfo = json_decode($url);
 
 echo "<p><b>";
-echo $getInfo->geoplugin_request . "</p></b><br>";
-echo "<b><p>";
+echo $getInfo->geoplugin_request . "</b></p>";
+echo "<p><b>";
 echo $getInfo->geoplugin_countryName . "</b></p>";
  
 echo "<table border='1' width='40%' align='left'><tr><td>IP ADDRESS:</td><td>";
