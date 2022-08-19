@@ -51,8 +51,6 @@ echo "</td></tr><tr><td>CITY:</td><td>";
 echo $getInfo->geoplugin_city;
 echo "</td></tr><tr><td>STATE OR REGION:</td><td>";
 echo $getInfo->geoplugin_region;
-echo "</td></tr><tr><td>REGION CODE:</td><td>";
-echo $getInfo->geoplugin_regionCode;
 echo "</td></tr><tr><td>COUNTRY CODE:</td><td>";
 echo $getInfo->geoplugin_countryCode;
 echo "</td></tr><tr><td>CONTINENT NAME:</td><td>";
